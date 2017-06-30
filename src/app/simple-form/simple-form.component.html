@@ -1,2 +1,2 @@
 <input #MyInput type="text" value="test">
-<button  (click)="onClick(MyInput)">Clickme </button>
+<button  (mouseover)="onClick($event, MyInput.value)">Clickme </button>
