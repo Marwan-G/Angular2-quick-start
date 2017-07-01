@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class MailService {
-message = ' I got mail';
+messages = [' hey Marwan how are you ', 'fine and you', 'yes, im doing well with angular'];
   constructor() { }
 
 }

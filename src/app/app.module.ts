@@ -16,7 +16,7 @@ import { SimpleFormComponent } from './simple-form/simple-form.component';
     FormsModule,
     HttpModule
   ],
-  providers: [MailService],
+  providers: [{provide:'mail', useClass: MailService}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
