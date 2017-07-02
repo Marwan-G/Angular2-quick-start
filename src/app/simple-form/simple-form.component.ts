@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 
 @Component({
   selector: 'app-simple-form',
@@ -6,13 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class SimpleFormComponent implements OnInit {
+  @Input() receivedMessage;
   onClick(event, value){
     console.log(value);
     console.log(event);
   }
-
   constructor() { }
-
   ngOnInit() {
   }
 
