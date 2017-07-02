@@ -11,7 +11,9 @@ export class SimpleFormComponent implements OnInit {
     console.log(value);
     console.log(event);
   }
-  constructor() { }
+  constructor() {
+    setInterval(()=>this.receivedMessage= Math.random().toString(),2000);
+  }
   ngOnInit() {
   }
 
