@@ -1,6 +1,5 @@
 
   <hr>
-  <h3>{{receivedMessage}}</h3>
 <input #MyInput type="text" value="test"  [(ngModel)]="receivedMessage">
-<button  (mouseover)="onClick($event,MyInput.value)">Clickme </button>
+<button  (click)="update.emit({text:receivedMessage})">Clickme </button>
 
